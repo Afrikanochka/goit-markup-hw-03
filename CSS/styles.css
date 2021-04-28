@@ -10,16 +10,30 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   background: var(--primary-bg-color);
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Logo */
@@ -31,7 +45,11 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
+
 .colortext {
   color: var(--accent-color);
 }
@@ -40,19 +58,25 @@ ul {
 .main-nav {
   display: flex;
   align-items: center;
+  padding-bottom: 32px;
 }
 .nav {
-  margin-left: 93px;
-}
-.nav,
-.auth-nav {
   display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.nav .link,
+.nav-list .link,
 .auth-nav .link {
   text-decoration: none;
   font-weight: 500;
@@ -60,18 +84,17 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.nav .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.nav-list .link {
   color: var(--primary-text-color);
 }
-.nav .link.current {
+.nav-list .link.current {
   color: var(--accent-color);
 }
-.auth-nav .auth-nav-item + .auth-nav-item {
-  margin-left: 50px;
+.auth-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 .auth-nav {
+  display: flex;
   margin-left: auto;
 }
 
