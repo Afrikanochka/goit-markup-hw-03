@@ -158,6 +158,7 @@ img {
   margin-bottom: 10px;
 }
 .feature-text {
+  max-width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -193,10 +194,12 @@ img {
   flex-basis: calc((100% - 90px) / 3);
   margin-right: 30px;
   margin-top: 30px;
-  border: 1px solid rgba(238, 238, 238, 1);
+  background: var(--subtitle-color);
 }
-.work-picture {
-  margin-bottom: 20px;
+
+.work-desc {
+  padding: 20px 24px;
+  border: 1px solid rgba(238, 238, 238, 1);
 }
 .work-list .title {
   font-weight: 700;
@@ -220,15 +223,17 @@ img {
   margin-right: -30px;
 }
 .user-item {
-  margin-right: 30px;
   flex-basis: calc((100% - 120px) / 4);
+  margin-right: 30px;
+}
+.user-avatar {
+  padding-top: 30px;
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.user-item .img {
-  margin-bottom: 30px;
-}
+
 .user-title {
   margin-bottom: 10px;
 }
